@@ -6,6 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg3"
     tools:context=".UpdateNoteActivity">
 
     <TextView
@@ -17,16 +18,16 @@
         android:fontFamily="serif"
         android:text="Edit "
         android:textColor="@color/purple"
-        android:textSize="24sp" />
+        android:textSize="34sp" />
 
     <ImageView
         android:id="@+id/updateSaveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/baseline_done_24"
-        android:layout_alignParentEnd="true"
+        android:layout_width="52dp"
+        android:layout_height="41dp"
         android:layout_alignTop="@id/editNoteHeading"
-        android:layout_marginEnd="6dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/baseline_done_24" />
 
     <EditText
         android:id="@+id/UpdateTitleEditText"
