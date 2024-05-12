@@ -37,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/orange_border"
         android:fontFamily="sans-serif"
-        android:hint="Enter the title"
+        android:hint="Enter the date"
         android:maxLines="1"
         android:padding="12dp"
         android:textColor="#090909"
