@@ -11,12 +11,12 @@
 
     <TextView
         android:id="@+id/editNoteHeading"
-        android:layout_width="wrap_content"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:fontFamily="serif"
-        android:text="Edit "
+        android:text="Make Changes"
         android:textColor="@color/purple"
         android:textSize="34sp" />
 

@@ -11,12 +11,12 @@
 
     <TextView
         android:id="@+id/addNoteHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="263dp"
+        android:layout_height="59dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
-        android:text="My Diary"
+        android:text="Daily Update"
         android:textAllCaps="false"
         android:textColor="@color/purple"
         android:textSize="34sp"
