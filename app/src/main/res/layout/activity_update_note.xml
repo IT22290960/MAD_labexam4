@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_extralight_italic"
-        android:text="Edit"
+        android:fontFamily="serif"
+        android:text="Edit "
         android:textColor="@color/purple"
         android:textSize="24sp" />
 
