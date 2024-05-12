@@ -12,12 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_extralight_italic"
-        android:text="Notes."
         android:layout_marginStart="18dp"
-        android:textColor="@color/orange"
-        android:textSize="24sp"/>
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="My Diary"
+        android:textColor="@color/purple"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notesRecyclerView"
@@ -36,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="7dp"
-        android:backgroundTint="@color/orange"
+        android:backgroundTint="@color/purple"
         android:src="@drawable/baseline_add_24"
         app:tint="@color/white" />
 </RelativeLayout>

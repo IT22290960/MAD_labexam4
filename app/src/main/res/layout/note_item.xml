@@ -25,9 +25,9 @@
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Title"
+                android:text="Date"
                 android:fontFamily="@font/poppins_extralight_italic"
-                android:textColor="@color/orange"
+                android:textColor="@color/purple"
                 android:textSize="18sp"
                 android:textStyle="bold"/>
             <ImageView

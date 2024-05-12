@@ -15,8 +15,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_extralight_italic"
-        android:text="Edit Note."
-        android:textColor="@color/orange"
+        android:text="Edit"
+        android:textColor="@color/purple"
         android:textSize="24sp" />
 
     <ImageView
