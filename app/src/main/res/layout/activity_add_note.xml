@@ -6,6 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg4"
     tools:context=".AddNoteActivity">
 
     <TextView
@@ -18,13 +19,13 @@
         android:text="My Diary"
         android:textAllCaps="false"
         android:textColor="@color/purple"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textStyle="bold|italic" />
 
     <ImageView
         android:id="@+id/saveButton"
-        android:layout_width="39dp"
-        android:layout_height="wrap_content"
+        android:layout_width="77dp"
+        android:layout_height="59dp"
         android:layout_alignTop="@id/addNoteHeading"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="6dp"
@@ -37,10 +38,11 @@
         android:layout_below="@id/addNoteHeading"
         android:layout_marginTop="16dp"
         android:background="@drawable/orange_border"
-        android:fontFamily="@font/poppins_extralight_italic"
+        android:fontFamily="sans-serif"
         android:hint="Enter the date"
         android:maxLines="1"
         android:padding="12dp"
+        android:textColor="#090909"
         android:textSize="20sp" />
 
     <EditText
@@ -50,11 +52,12 @@
         android:layout_below="@id/titleEditText"
         android:layout_marginTop="12dp"
         android:background="@drawable/orange_border"
-        android:fontFamily="@font/poppins_extralight_italic"
+        android:fontFamily="sans-serif"
         android:gravity="top"
         android:hint="Enter the description"
         android:padding="12dp"
         android:textAllCaps="true"
+        android:textColor="#090909"
         android:textSize="18sp" />
 
 
