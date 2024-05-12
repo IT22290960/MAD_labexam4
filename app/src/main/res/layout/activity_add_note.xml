@@ -14,19 +14,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_extralight_italic"
-        android:text="Add Note."
-        android:textColor="@color/orange"
-        android:textSize="24sp" />
+        android:fontFamily="sans-serif"
+        android:text="My Diary"
+        android:textAllCaps="false"
+        android:textColor="@color/purple"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
 
     <ImageView
         android:id="@+id/saveButton"
-        android:layout_width="wrap_content"
+        android:layout_width="39dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_done_24"
-        android:layout_alignParentEnd="true"
         android:layout_alignTop="@id/addNoteHeading"
-        android:layout_marginEnd="6dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/baseline_done_24" />
 
     <EditText
         android:id="@+id/titleEditText"
@@ -36,7 +38,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/orange_border"
         android:fontFamily="@font/poppins_extralight_italic"
-        android:hint="Enter the title"
+        android:hint="Enter the date"
         android:maxLines="1"
         android:padding="12dp"
         android:textSize="20sp" />
@@ -45,14 +47,15 @@
         android:id="@+id/contentEditText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="Enter the description"
-        android:gravity="top"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:fontFamily="@font/poppins_extralight_italic"
-        android:background="@drawable/orange_border"
         android:layout_below="@id/titleEditText"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="@font/poppins_extralight_italic"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:padding="12dp"
+        android:textAllCaps="true"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>
