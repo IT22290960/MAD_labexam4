@@ -7,7 +7,7 @@ import com.example.notessqlite.Note
 import com.example.notessqlite.NoteDatabaseHelper
 import com.example.taskmanagemenet.databinding.ActivityAddNoteBinding
 
-class AddNoteActivity : AppCompatActivity() {
+class   AddNoteActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAddNoteBinding
     private lateinit var db: NoteDatabaseHelper
