@@ -9,7 +9,6 @@ import com.example.taskmanagemenet.databinding.ActivityAddNoteBinding
 
 class AddNoteActivity : AppCompatActivity() {
 
-    // These are properties of the AddNoteActivity class.
     private lateinit var binding: ActivityAddNoteBinding
     private lateinit var db: NoteDatabaseHelper
 
@@ -23,22 +22,19 @@ class AddNoteActivity : AppCompatActivity() {
         // Sets the content view to the root of the inflated layout.
         setContentView(binding.root)
 
-        // Initializes the database helper with the current context.
         db = NoteDatabaseHelper(this)
 
         // Sets a click listener for the saveButton.
         binding.saveButton.setOnClickListener {
-            // Retrieves the title and content from the EditText fields.
+
             val title = binding.titleEditText.text.toString()
             val content = binding.contentEditText.text.toString()
-
-            // Creates a Note object with the retrieved title and content.
             val note = Note(0, title, content)
 
-            // Inserts the note into the database.
+
             db.insertNote(note)
 
-            // Finishes the activity.
+
             finish()
 
             // Displays a short Toast message indicating the note has been saved.
