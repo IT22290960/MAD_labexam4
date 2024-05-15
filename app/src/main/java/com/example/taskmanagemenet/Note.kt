@@ -1,3 +1,6 @@
 package com.example.notessqlite
 
-data class Note(val id: Int, val title:String, val content: String)
+
+// Data classes are used to hold data/state and are typically used to represent immutable data.
+
+data class Note(val id: Int, val title: String, val content: String)

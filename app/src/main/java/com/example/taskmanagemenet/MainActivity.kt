@@ -9,29 +9,43 @@ import com.example.taskmanagemenet.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var  binding: ActivityMainBinding
+    // These are properties of the MainActivity class.
+    private lateinit var binding: ActivityMainBinding
     private lateinit var db: NoteDatabaseHelper
     private lateinit var notesAdapter: NotesAdapter
 
+    // This method is called when the activity is first created.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Inflates the layout defined in ActivityMainBinding.
         binding = ActivityMainBinding.inflate(layoutInflater)
+
+        // Sets the content view to the root of the inflated layout.
         setContentView(binding.root)
 
+        // Initializes the database helper with the current context.
         db = NoteDatabaseHelper(this)
-        notesAdapter = NotesAdapter(db.getAllNotes(),this)
+
+        notesAdapter = NotesAdapter(db.getAllNotes(), this)
 
         binding.notesRecyclerView.layoutManager = LinearLayoutManager(this)
+
         binding.notesRecyclerView.adapter = notesAdapter
 
         binding.addButton.setOnClickListener {
             val intent = Intent(this, AddNoteActivity::class.java)
+
+
             startActivity(intent)
         }
     }
 
+
     override fun onResume() {
         super.onResume()
-        notesAdapter.refreshData(db.getAllNotes() )
+
+        // Refreshes the data in the notesAdapter with all notes retrieved from the database.
+        notesAdapter.refreshData(db.getAllNotes())
     }
 }

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,19 +11,21 @@
     android:background="@drawable/bg2"
     app:cardUseCompatPadding="true">
 
+    <!-- LinearLayout to hold the content inside the CardView. -->
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- RelativeLayout to hold the title TextView and action ImageViews. -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
+            <!-- TextView to display the title of the note. -->
             <TextView
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
@@ -32,6 +36,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
+            <!-- ImageView for updating the note. -->
             <ImageView
                 android:id="@+id/updateButton"
                 android:layout_width="24dp"
@@ -40,6 +45,7 @@
                 android:layout_marginEnd="30dp"
                 android:src="@drawable/baseline_edit_24" />
 
+            <!-- ImageView for deleting the note. -->
             <ImageView
                 android:id="@+id/deleteButton"
                 android:layout_width="24dp"
@@ -49,6 +55,7 @@
 
         </RelativeLayout>
 
+        <!-- TextView to display the content of the note. -->
         <TextView
             android:id="@+id/contentTextView"
             android:layout_width="wrap_content"
